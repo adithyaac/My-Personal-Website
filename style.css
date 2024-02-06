@@ -1,0 +1,241 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+.profile-img {
+    width: 350px;
+    height: auto;
+    border: 5px solid gold;
+    border-radius: 10%;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: rgb(247, 204, 166);
+    color: chocolate;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+section {
+    background-color: peachpuff;
+    padding: 20px;
+    margin: 50px 10px;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+}
+
+
+a {
+    color: chocolate;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+.navbar {
+    background: linear-gradient(to right, rgb(255, 245, 0), rgb(255, 225, 0));
+    padding: 10px 0;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    text-align: center;
+}
+
+
+a:hover, a:focus {
+    color: #0056b3;
+    background-color: #e7f1ff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.dark-theme {
+    background-color:  #0c1446;
+    color: white;
+}
+
+.dark-theme .navbar {
+    background: linear-gradient(to right, rgb(162, 162, 162), rgb(92, 92, 92));
+}
+
+.dark-theme .navbar a {
+    color: #ddd;
+}
+
+.dark-theme .navbar a:hover, a:focus{
+    background-color: #555;
+}
+.dark-theme #blogs a:hover, a:focus{
+    background-color: rgb(0, 0, 205);
+}
+
+.dark-theme .blog-container-button {
+    background-color:  #0c1446;
+    color: aquamarine;
+    border-color: darkslateblue;
+}
+
+.dark-theme section{
+    background-color: midnightblue;
+    color :aquamarine
+}
+.blog-container-button:hover{
+    transition: 0.3s;
+    transform: scale(1.2);
+}
+
+.dark-theme .profile-img{
+    width: 350px;
+    height: auto;
+    border: 5px solid mediumslateblue;
+    border-radius: 10%;
+}
+#theme-toggle {
+    background-image: linear-gradient(to right, gold, rgb(215, 165, 0));
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    outline: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+.dark-theme #theme-toggle{
+    background-image: linear-gradient(to right, rgb(0, 55, 255), rgb(0, 25, 125));
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    outline: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+
+}
+
+#theme-toggle:hover{
+    background-image: linear-gradient(to left, #045de9, #09c6f9);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transform: translateY(-2px);
+}
+
+#theme-toggle:active {
+    transform: translateY(1px);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+.light-text {
+
+    font-size: 0.9em;
+}
+.dark-theme a{
+
+    color: aquamarine
+}
+
+.liked{
+    background-color: gold;
+    color: rgb(148, 112, 20);
+}
+.dark-theme .liked{
+    background-color: purple;
+    color: aquamarine
+}
+
+
+#blogs {
+    text-align: center;
+    padding: 20px; 
+}
+
+#blogs h1 {
+
+    color: chocolate;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.dark-theme #blogs h1 {
+    color: aquamarine;
+}
+.dark-theme #blogs div{
+    background: rgb(0, 0, 75);
+}
+.dark-theme #blogs div a{
+    color: aquamarine;
+}
+#blogs div {
+    margin: 20px auto;
+    padding: 15px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block;
+    width: calc(50% - 40px);
+    max-width: 300px;
+    
+}
+
+#blogs div a {
+    display: block;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #C97C70;
+    background: none;
+    margin: 10px 0;
+}
+
+#blogs div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+
+}
+#social-links a img {
+
+    transition: transform 0.3s ease;
+    border-radius: 10%;
+    width: 10vw;
+    height: 10vw;
+    text-align: center;
+
+}
+#social-links h1{
+    white-space: nowrap;
+}
+#social-links a:hover img {
+    transform: scale(1.1);
+
+}
+#social-links a:hover {
+    color: transparent;
+    background-color: transparent;
+    box-shadow: none;
+}
+.icons {
+
+    gap: 20px;
+    text-align: center;
+    justify-content: space-around;
+    width: 100%;
+}
+.blog1_link a:hover{
+    background-color: lightgreen;
+}
+.blog2_link a:hover{
+    background-color: rgb(144, 144, 238);
+}
